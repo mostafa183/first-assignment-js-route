@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    // Prompt user for input (1)
+         
+var userInput = prompt("Enter a number:");
+
+console.log("Output:", userInput);
+
+//2
+
+var userInput = prompt("Enter a number:");
+var number = Number(userInput);
+if (number % 3 === 0 && number % 4 === 0) {
+    console.log("Output: Yes");
+} else {
+    console.log("Output: No");
+}
+
+
+//3
+var num1 = parseInt(prompt("Enter the first integer: "));
+var num2 = parseInt(prompt("Enter the second integer: "));
+var result = (num1 > num2) ? num1 : num2;
+console.log("Output: " + result);
+
+//4
+var number = parseInt(prompt("Enter an integer: "));
+var result = (number < 0) ? "negative" : "positive";
+console.log("Output: " + result);
+
+//5
+
+var num1 = parseInt(prompt("Enter the first integer: "));
+var num2 = parseInt(prompt("Enter the second integer: "));
+var num3 = parseInt(prompt("Enter the third integer: "));
+
+var max = num1;
+if (num2 > max) {
+    max = num2;
+}
+if (num3 > max) {
+    max = num3;
+}
+
+
+var min = num1;
+if (num2 < min) {
+    min = num2;
+}
+if (num3 < min) {
+    min = num3;
+}
+
+console.log("max element = " + max);
+console.log("min element = " + min);
+
+//6
+var number = parseInt(prompt("Enter an integer: "));
+var result = (number % 2 === 0) ? "even" : "odd";
+console.log("The number is " + result);
+
+//7
+var char = prompt("Enter a character: ").toLowerCase();
+
+var result = (char === 'a' || char === 'e' || char === 'i' || char === 'o' || char === 'u') ? "vowel" : "consonant";
+console.log("Output: " + result);
+
+//8
+
+
+</script>
+
+</body>
+</html>
